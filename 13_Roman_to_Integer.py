@@ -57,5 +57,5 @@ class Solution:
         
         return total
     
-sol = Solution()
-print(sol.romanToInt('MCMXCIV'))
+solution = Solution()
+print(solution.romanToInt('MCMXCIV'))
