@@ -7,11 +7,13 @@
 def twoSum(nums, target):
     for i, value in enumerate(nums):
         remaining = target - nums[i]
+        # remove nums[i] to shrink size of search by one on each iteration 
         nums[i] = None
         if remaining in nums:
+            # return indices of i and the number required to hit target
             return [i, nums.index(remaining)]
 
+# run an example:
 nums = [3,2,4]
 target = 6
-print(nums.index(2))
-# print(twoSum(nums, target))
+print(twoSum(nums, target))
