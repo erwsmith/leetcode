@@ -72,6 +72,6 @@ def pointsBelong(x1, y1, x2, y2, x3, y3, xp, yp, xq, yq):
 def get_vector(x1, y1, x2, y2):
         return [x1 - x2, y1 - y2]
 
-# print(pointsBelong(0,0,2,0,4,0,2,0,4,0))
-# print(pointsBelong(2,2,7,2,5,4,4,3,7,4))
+print(0 == pointsBelong(0,0,2,0,4,0,2,0,4,0))
+print(4 == pointsBelong(2,2,7,2,5,4,4,3,7,4))
 print(1 == pointsBelong(3,1,7,1,5,5,3,1,0,0))
